@@ -23,7 +23,7 @@ exports.createProfile = async function (req, res, next) {
 exports.getUser = async function (req, res, next) {
   try {
     
-    const data = await USER.findOne({ Email: req.body.Email });
+    const data = await USER.find();
     if (!data) {
       throw new Error("invalid email address");
     }

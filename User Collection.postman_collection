@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "f5b927b4-b7c3-42ce-b1a3-2baa99013760",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30757510"
+	},
+	"item": [
+		{
+			"name": "createProfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"abc\",\r\n    \"Phone\":\"8975846859\",\r\n    \"Email\":\"abc2@gmail.com\",\r\n    \"Age\":\"20\",\r\n    \"Address\":\"andhc chdsc hctte cjdtte\",\r\n    \"Url\":\"https://i.pinimg.com/originals/78/ee/0a/78ee0a3136a46ec22d9b306db4e993cc.jpg\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://userprofle.onrender.com/users/createProfile",
+					"protocol": "https",
+					"host": [
+						"userprofle",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"createProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProfile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"Email\":\"test@gmail.com\"\r\n \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://userprofle.onrender.com/users/getProfile",
+					"protocol": "https",
+					"host": [
+						"userprofle",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"getProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProfile",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://userprofle.onrender.com/users/deleteProfile/6571c350647f1f5737865e0f",
+					"protocol": "https",
+					"host": [
+						"userprofle",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"deleteProfile",
+						"6571c350647f1f5737865e0f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProfile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"bk\",\r\n    \"Phone\":\"8957489658\",\r\n    \"Email\":\"test@gmail.com\"\r\n  \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://userprofle.onrender.com/users/updateProfile/6571cdcf1ba0f73f22098c68",
+					"protocol": "https",
+					"host": [
+						"userprofle",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"updateProfile",
+						"6571cdcf1ba0f73f22098c68"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
